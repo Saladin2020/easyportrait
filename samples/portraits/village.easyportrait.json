@@ -16,9 +16,9 @@
       ],
       "from": "hijab_teacher",
       "name": {
-        "th": "ครูไอชะฮ์",
-        "en": "Teacher Aisyah",
-        "ms": "Cikgu Aisyah"
+        "th": "ก๊ะฟาตีมะห์",
+        "en": "Kak Fatimah",
+        "ms": "Kak Fatimah"
       }
     },
     {
@@ -89,9 +89,9 @@
       "shirtColor": "#3f7fa6",
       "from": "tadika_girl",
       "name": {
-        "th": "นูรุล",
-        "en": "Nurul",
-        "ms": "Nurul"
+        "th": "ไอชะฮ์",
+        "en": "Aisyah",
+        "ms": "Aisyah"
       }
     },
     {
@@ -119,9 +119,9 @@
       "shirtColor": "#2b3a67",
       "from": "village_farmer",
       "name": {
-        "th": "ลุงสมชาย",
-        "en": "Uncle Somchai",
-        "ms": "Pak Cik Somchai"
+        "th": "ลุงมี",
+        "en": "Uncle Mee",
+        "ms": "Pak Cik Mee"
       },
       "headwear": "ngob",
       "headwearColor": "#d4b06a"
@@ -193,9 +193,9 @@
       ],
       "from": "school_girl",
       "name": {
-        "th": "แพรว",
-        "en": "Praew",
-        "ms": "Praew"
+        "th": "พี่ฝน",
+        "en": "Fon",
+        "ms": "Kak Fon"
       }
     },
     {
