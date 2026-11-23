@@ -109,7 +109,7 @@ function Editor({ spec: initial, ws, lang, onSaved }: { spec: PortraitSpec & { d
     </select>
   );
   const color = (k: keyof PortraitSpec, label: string) => (
-    <label className="swatch">
+    <label className="swatch" style={s[k] === undefined ? { opacity: 0.4 } : undefined} title={s[k] === undefined ? "unset (default)" : String(s[k])}>
       <input type="color" value={String(s[k] ?? "#000000")} onChange={(e) => set(k, e.target.value)} />
       <span>{label}</span>
     </label>
