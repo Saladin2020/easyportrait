@@ -1,0 +1,364 @@
+{
+  "format": "easyportrait/1",
+  "portraits": [
+    {
+      "id": "town_hijab_teacher",
+      "body": "adult",
+      "skin": "#c9956c",
+      "hair": "#2a221c",
+      "hairStyle": "long",
+      "headwear": "hijab",
+      "headwearColor": "#2f7a6a",
+      "shirt": "baju_kurung",
+      "shirtColor": "#e6d3a3",
+      "features": [
+        "lashes"
+      ],
+      "from": "hijab_teacher",
+      "name": {
+        "th": "ครูไอชะฮ์",
+        "en": "Teacher Aisyah",
+        "ms": "Cikgu Aisyah"
+      }
+    },
+    {
+      "id": "town_kopiah_boy",
+      "body": "child",
+      "skin": "#e8c4a0",
+      "hair": "#2a221c",
+      "hairStyle": "crop",
+      "headwear": "kopiah",
+      "headwearColor": "#f0eee8",
+      "shirt": "baju_melayu",
+      "shirtColor": "#3f8a5a",
+      "from": "kopiah_boy",
+      "name": {
+        "th": "อาดัม",
+        "en": "Adam",
+        "ms": "Adam"
+      }
+    },
+    {
+      "id": "town_pak_cik",
+      "body": "elder",
+      "skin": "#c9956c",
+      "hair": "#d8d2c8",
+      "hairStyle": "crop",
+      "headwear": "kopiah",
+      "headwearColor": "#f0eee8",
+      "shirt": "jubah",
+      "shirtColor": "#e8e6e0",
+      "features": [
+        "beard",
+        "wrinkles"
+      ],
+      "from": "pak_cik_jubah",
+      "name": {
+        "th": "ปะจิอิสมะแอ",
+        "en": "Pak Cik Ismail",
+        "ms": "Pak Cik Ismail"
+      }
+    },
+    {
+      "id": "town_roti_seller",
+      "body": "adult",
+      "skin": "#e8c4a0",
+      "hair": "#2a221c",
+      "hairStyle": "long",
+      "headwear": "shawl",
+      "headwearColor": "#b0485e",
+      "shirt": "apron",
+      "shirtColor": "#6b3f2a",
+      "from": "roti_seller",
+      "accent": "#efe6d2",
+      "name": {
+        "th": "ก๊ะนะ",
+        "en": "Kak Na",
+        "ms": "Kak Na"
+      }
+    },
+    {
+      "id": "town_tadika_girl",
+      "body": "child",
+      "skin": "#c9956c",
+      "hair": "#2a221c",
+      "hairStyle": "long",
+      "headwear": "tudung_school",
+      "headwearColor": "#f4f2ec",
+      "shirt": "baju_kurung",
+      "shirtColor": "#3f7fa6",
+      "from": "tadika_girl",
+      "name": {
+        "th": "นูรุล",
+        "en": "Nurul",
+        "ms": "Nurul"
+      }
+    },
+    {
+      "id": "town_monk",
+      "body": "adult",
+      "skin": "#c9956c",
+      "hair": "#4a5a6a",
+      "hairStyle": "shaved",
+      "shirt": "monk_robe",
+      "shirtColor": "#e0841f",
+      "from": "temple_monk",
+      "name": {
+        "th": "หลวงพี่",
+        "en": "Luang Phi",
+        "ms": "Sami Luang Phi"
+      }
+    },
+    {
+      "id": "town_farmer",
+      "body": "adult",
+      "skin": "#c9956c",
+      "hair": "#2a221c",
+      "hairStyle": "crop",
+      "shirt": "mohom",
+      "shirtColor": "#2b3a67",
+      "from": "village_farmer",
+      "name": {
+        "th": "ลุงสมชาย",
+        "en": "Uncle Somchai",
+        "ms": "Pak Cik Somchai"
+      },
+      "headwear": "ngob",
+      "headwearColor": "#d4b06a"
+    },
+    {
+      "id": "town_elder",
+      "body": "elder",
+      "skin": "#c9956c",
+      "hair": "#c8c4bc",
+      "hairStyle": "balding",
+      "shirt": "mohom",
+      "shirtColor": "#3a4a3a",
+      "features": [
+        "mustache",
+        "wrinkles"
+      ],
+      "from": "grandpa",
+      "name": {
+        "th": "ตาเพิ่ม",
+        "en": "Grandpa Poem",
+        "ms": "Tok Poem"
+      }
+    },
+    {
+      "id": "town_kid",
+      "name": {
+        "th": "ต้น",
+        "en": "Ton",
+        "ms": "Ton"
+      },
+      "body": "child",
+      "skin": "#d9a77a",
+      "hair": "#2a221c",
+      "hairStyle": "messy",
+      "headwear": "cap",
+      "headwearColor": "#3f7fa6",
+      "headwearAccent": "#2b5a8a",
+      "shirt": "tshirt",
+      "shirtColor": "#f2c14e"
+    },
+    {
+      "id": "town_vendor",
+      "name": {
+        "th": "ป้าแดง",
+        "en": "Auntie Daeng",
+        "ms": "Mak Cik Daeng"
+      },
+      "body": "stocky",
+      "skin": "#d9a77a",
+      "hair": "#3a2418",
+      "hairStyle": "bun",
+      "shirt": "apron",
+      "shirtColor": "#c8504a",
+      "accent": "#efe6d2",
+      "features": [
+        "mole"
+      ]
+    },
+    {
+      "id": "town_student",
+      "body": "adult",
+      "skin": "#f0d0b0",
+      "hair": "#3a2418",
+      "hairStyle": "long",
+      "shirt": "blazer",
+      "shirtColor": "#243a6e",
+      "features": [
+        "lashes"
+      ],
+      "from": "school_girl",
+      "name": {
+        "th": "แพรว",
+        "en": "Praew",
+        "ms": "Praew"
+      }
+    },
+    {
+      "id": "pak_hamid",
+      "body": "adult",
+      "skin": "#8a5a3c",
+      "hair": "#2a221c",
+      "hairStyle": "crop",
+      "headwear": "songkok",
+      "headwearColor": "#26262c",
+      "shirt": "baju_melayu",
+      "shirtColor": "#2b5a8a",
+      "features": [
+        "mustache"
+      ],
+      "from": "songkok_groom",
+      "name": {
+        "th": "ปะฮามิด",
+        "en": "Pak Hamid",
+        "ms": "Pak Hamid"
+      }
+    },
+    {
+      "id": "mak_yah",
+      "body": "stocky",
+      "skin": "#8a5a3c",
+      "hair": "#2a221c",
+      "hairStyle": "long",
+      "headwear": "tudung_sarung",
+      "headwearColor": "#4a3a7a",
+      "shirt": "baju_kurung",
+      "shirtColor": "#c86a3a",
+      "from": "mak_yah",
+      "name": {
+        "th": "เมาะยะห์",
+        "en": "Mak Yah",
+        "ms": "Mak Yah"
+      }
+    },
+    {
+      "id": "yai",
+      "body": "elder",
+      "skin": "#e0bc98",
+      "hair": "#d6d2ca",
+      "hairStyle": "bun",
+      "shirt": "cardigan",
+      "shirtColor": "#8a6f9e",
+      "features": [
+        "wrinkles"
+      ],
+      "from": "grandma",
+      "name": {
+        "th": "ยาย",
+        "en": "Grandma",
+        "ms": "Nenek"
+      }
+    },
+    {
+      "id": "ah_kong",
+      "name": {
+        "th": "อากงเฮง",
+        "en": "Ah Kong Heng",
+        "ms": "Ah Kong Heng"
+      },
+      "body": "elder",
+      "skin": "#e6c8a6",
+      "hair": "#d8d2c8",
+      "hairStyle": "crop",
+      "shirt": "mohom",
+      "shirtColor": "#f2eee6",
+      "accent": "#c8504a",
+      "features": [
+        "wrinkles",
+        "glasses"
+      ]
+    },
+    {
+      "id": "noodle_auntie",
+      "body": "stocky",
+      "skin": "#e8c4a0",
+      "hair": "#4a2e20",
+      "hairStyle": "curly",
+      "headwear": "flower",
+      "headwearColor": "#e86a9a",
+      "shirt": "apron",
+      "shirtColor": "#2f6b4f",
+      "from": "noodle_auntie",
+      "accent": "#efe6d2",
+      "name": {
+        "th": "เจ๊หมวย",
+        "en": "Auntie Muay",
+        "ms": "Mak Cik Muay"
+      }
+    },
+    {
+      "id": "kru_ploy",
+      "body": "adult",
+      "skin": "#e8c4a0",
+      "hair": "#4a2e20",
+      "hairStyle": "long",
+      "shirt": "cardigan",
+      "shirtColor": "#6e8a9e",
+      "features": [
+        "glasses"
+      ],
+      "from": "teacher",
+      "name": {
+        "th": "ครูพลอย",
+        "en": "Teacher Ploy",
+        "ms": "Cikgu Ploy"
+      }
+    },
+    {
+      "id": "ustaz_yusof",
+      "name": {
+        "th": "อุสตาซยูโซะ",
+        "en": "Ustaz Yusof",
+        "ms": "Ustaz Yusof"
+      },
+      "body": "adult",
+      "skin": "#c9956c",
+      "hair": "#2a221c",
+      "hairStyle": "crop",
+      "headwear": "serban",
+      "headwearColor": "#f2efe6",
+      "shirt": "jubah",
+      "shirtColor": "#e8e6e0",
+      "features": [
+        "beard"
+      ]
+    },
+    {
+      "id": "bang_man",
+      "body": "adult",
+      "skin": "#8a5a3c",
+      "hair": "#2a221c",
+      "hairStyle": "crop",
+      "shirt": "tshirt",
+      "shirtColor": "#d8d0b8",
+      "from": "pelekat_fisher",
+      "name": {
+        "th": "บังมัน",
+        "en": "Bang Man",
+        "ms": "Bang Man"
+      },
+      "headwear": "pha_khao_ma",
+      "headwearColor": "#c8504a",
+      "headwearAccent": "#f2eee6"
+    },
+    {
+      "id": "young_knight",
+      "body": "adult",
+      "skin": "#e8c4a0",
+      "hair": "#c8a45a",
+      "hairStyle": "spiky",
+      "shirt": "armor",
+      "shirtColor": "#9aa3ad",
+      "from": "young_knight",
+      "name": {
+        "th": "อัศวินน้อย",
+        "en": "Young Knight",
+        "ms": "Kesatria Muda"
+      }
+    }
+  ]
+}

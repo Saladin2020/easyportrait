@@ -1,0 +1,22 @@
+{
+  "id": "little_girl",
+  "name": "Little Girl",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_child_tan",
+    "face": "face_lashes",
+    "hair_front": "hair_twintails_front",
+    "shirt": "shirt_dress",
+    "shoes": "shoes_sandals",
+    "accessory": "acc_flower",
+    "hair_back": "hair_twintails_back"
+  },
+  "colors": {
+    "body": "#c9956c",
+    "hair_front": "#2a221c",
+    "shirt": "#d77a9a",
+    "shoes": "#c46a8a",
+    "accessory": "#f2d04a",
+    "hair_back": "#2a221c"
+  }
+}

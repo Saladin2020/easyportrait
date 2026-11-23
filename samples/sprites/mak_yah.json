@@ -1,0 +1,20 @@
+{
+  "id": "mak_yah",
+  "name": "Mak Yah (Tudung Sarung Auntie)",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_stocky_deep",
+    "face": "face_smile",
+    "hair_front": "hair_tudung_sarung_front",
+    "shirt": "shirt_baju_kurung",
+    "pants": "pants_sarong",
+    "shoes": "shoes_sandals"
+  },
+  "colors": {
+    "body": "#8a5a3c",
+    "hair_front": "#4a3a7a",
+    "shirt": "#c86a3a",
+    "pants": "#6b3f2a",
+    "shoes": "#8a6a44"
+  }
+}

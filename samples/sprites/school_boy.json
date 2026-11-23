@@ -1,0 +1,24 @@
+{
+  "id": "school_boy",
+  "name": "School Boy",
+  "updatedAt": "2026-11-14T17:26:46.443Z",
+  "selections": {
+    "body": "body_light",
+    "face": "face_neutral",
+    "hair_front": "hair_messy_front",
+    "shirt": "shirt_blazer",
+    "pants": "pants_brown",
+    "shoes": "shoes_dark",
+    "accessory": "acc_backpack",
+    "hair_back": "hair_messy_back"
+  },
+  "colors": {
+    "body": "#e8c4a0",
+    "hair_front": "#6e482a",
+    "shirt": "#243a6e",
+    "pants": "#483428",
+    "shoes": "#221c18",
+    "accessory": "#2f6b4f",
+    "hair_back": "#6e482a"
+  }
+}

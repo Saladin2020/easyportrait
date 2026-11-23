@@ -1,0 +1,24 @@
+{
+  "id": "hoodie_kid",
+  "name": "Hoodie Kid",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_child_light",
+    "face": "face_neutral",
+    "hair_front": "hair_messy_front",
+    "shirt": "shirt_hoodie",
+    "pants": "pants_jeans",
+    "shoes": "shoes_sneakers",
+    "accessory": "acc_cap",
+    "hair_back": "hair_messy_back"
+  },
+  "colors": {
+    "body": "#e8c4a0",
+    "hair_front": "#c8a45a",
+    "shirt": "#4a5568",
+    "pants": "#2f4a6e",
+    "shoes": "#c84040",
+    "accessory": "#d24a4a",
+    "hair_back": "#c8a45a"
+  }
+}

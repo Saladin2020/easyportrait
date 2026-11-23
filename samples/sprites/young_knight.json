@@ -1,0 +1,24 @@
+{
+  "id": "young_knight",
+  "name": "Young Knight",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_light",
+    "face": "face_neutral",
+    "hair_front": "hair_spiky_front",
+    "shirt": "shirt_armor",
+    "pants": "pants_brown",
+    "shoes": "shoes_boots",
+    "accessory": "acc_sword",
+    "hair_back": "hair_spiky_back"
+  },
+  "colors": {
+    "body": "#e8c4a0",
+    "hair_front": "#c8a45a",
+    "shirt": "#9aa3ad",
+    "pants": "#3a2e28",
+    "shoes": "#5a3a22",
+    "accessory": "#c0c8d0",
+    "hair_back": "#c8a45a"
+  }
+}

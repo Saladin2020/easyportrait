@@ -1,0 +1,24 @@
+{
+  "id": "village_guard",
+  "name": "Village Guard",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_stocky_tan",
+    "face": "face_beard",
+    "hair_front": "hair_crop_front",
+    "shirt": "shirt_armor",
+    "pants": "pants_brown",
+    "shoes": "shoes_boots",
+    "accessory": "acc_sword",
+    "hair_back": "hair_crop_back"
+  },
+  "colors": {
+    "body": "#c9956c",
+    "hair_front": "#3a2418",
+    "shirt": "#8a939d",
+    "pants": "#483428",
+    "shoes": "#3a2a1a",
+    "accessory": "#c0c8d0",
+    "hair_back": "#3a2418"
+  }
+}

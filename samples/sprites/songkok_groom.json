@@ -1,0 +1,24 @@
+{
+  "id": "songkok_groom",
+  "name": "Pak Hamid (Songkok, Hari Raya Best)",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_deep",
+    "face": "face_mustache",
+    "hair_front": "hair_crop_front",
+    "shirt": "shirt_baju_melayu",
+    "pants": "pants_brown",
+    "shoes": "shoes_dark",
+    "accessory": "acc_songkok",
+    "hair_back": "hair_crop_back"
+  },
+  "colors": {
+    "body": "#8a5a3c",
+    "hair_front": "#2a221c",
+    "shirt": "#2b5a8a",
+    "pants": "#2b3a4a",
+    "shoes": "#221c18",
+    "accessory": "#26262c",
+    "hair_back": "#2a221c"
+  }
+}

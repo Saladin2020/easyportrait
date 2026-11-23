@@ -1,0 +1,22 @@
+{
+  "id": "teacher",
+  "name": "Teacher",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_light",
+    "face": "face_glasses",
+    "hair_front": "hair_long_front",
+    "shirt": "shirt_cardigan",
+    "pants": "pants_skirt",
+    "shoes": "shoes_dark",
+    "hair_back": "hair_long_back"
+  },
+  "colors": {
+    "body": "#e8c4a0",
+    "hair_front": "#4a2e20",
+    "shirt": "#6e8a9e",
+    "pants": "#483428",
+    "shoes": "#3a2a22",
+    "hair_back": "#4a2e20"
+  }
+}

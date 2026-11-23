@@ -1,0 +1,24 @@
+{
+  "id": "farmer_woman",
+  "name": "Rice Farmer (Pa)",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_tan",
+    "face": "face_lashes",
+    "hair_front": "hair_bun_front",
+    "shirt": "shirt_tshirt",
+    "pants": "pants_sarong",
+    "shoes": "shoes_sandals",
+    "accessory": "acc_ngob",
+    "hair_back": "hair_bun_back"
+  },
+  "colors": {
+    "body": "#b88560",
+    "hair_front": "#2a221c",
+    "shirt": "#c8a070",
+    "pants": "#5b3a7a",
+    "shoes": "#8a6a44",
+    "accessory": "#d4b06a",
+    "hair_back": "#2a221c"
+  }
+}

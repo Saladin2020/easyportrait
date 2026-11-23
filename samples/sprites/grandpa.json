@@ -1,0 +1,24 @@
+{
+  "id": "grandpa",
+  "name": "Grandpa (Ta)",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_elder_tan",
+    "face": "face_mustache",
+    "hair_front": "hair_balding_front",
+    "shirt": "shirt_mohom",
+    "pants": "pants_fisherman",
+    "shoes": "shoes_sandals",
+    "accessory": "acc_cane",
+    "hair_back": "hair_balding_back"
+  },
+  "colors": {
+    "body": "#c9956c",
+    "hair_front": "#c8c4bc",
+    "shirt": "#3a4a3a",
+    "pants": "#2a2a2a",
+    "shoes": "#8a6a44",
+    "accessory": "#5a3a22",
+    "hair_back": "#c8c4bc"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "little_boy",
+  "name": "Little Boy",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_child_deep",
+    "face": "face_smile",
+    "hair_front": "hair_crop_front",
+    "shirt": "shirt_tank",
+    "pants": "pants_shorts",
+    "shoes": "shoes_sneakers",
+    "hair_back": "hair_crop_back"
+  },
+  "colors": {
+    "body": "#8a5a3c",
+    "hair_front": "#2a221c",
+    "shirt": "#4f86c6",
+    "pants": "#c48a3a",
+    "shoes": "#3f7d4e",
+    "hair_back": "#2a221c"
+  }
+}

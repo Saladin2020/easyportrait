@@ -1,0 +1,18 @@
+{
+  "id": "pak_cik_jubah",
+  "name": "Pak Cik Ismail (Jubah, Kopiah, Beard)",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_elder_tan",
+    "face": "face_beard",
+    "shirt": "shirt_jubah",
+    "shoes": "shoes_sandals",
+    "accessory": "acc_kopiah"
+  },
+  "colors": {
+    "body": "#c9956c",
+    "shirt": "#e8e6e0",
+    "shoes": "#8a6a44",
+    "accessory": "#f0eee8"
+  }
+}

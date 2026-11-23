@@ -1,0 +1,24 @@
+{
+  "id": "school_girl",
+  "name": "School Girl",
+  "updatedAt": "2026-11-14T17:26:46.444Z",
+  "selections": {
+    "body": "body_light",
+    "face": "face_lashes",
+    "hair_front": "hair_ponytail_front",
+    "shirt": "shirt_blazer",
+    "pants": "pants_skirt",
+    "shoes": "shoes_dark",
+    "accessory": "acc_backpack",
+    "hair_back": "hair_ponytail_back"
+  },
+  "colors": {
+    "body": "#f0d0b0",
+    "hair_front": "#3a2418",
+    "shirt": "#243a6e",
+    "pants": "#2f3d6e",
+    "shoes": "#221c18",
+    "accessory": "#c0587e",
+    "hair_back": "#3a2418"
+  }
+}
