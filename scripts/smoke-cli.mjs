@@ -4,7 +4,7 @@ import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "no
 import os from "node:os";
 import path from "node:path";
 
-const ws = mkdtempSync(path.join(os.tmpdir(), "easynpc-cli-"));
+const ws = mkdtempSync(path.join(os.tmpdir(), "easyportrait-cli-"));
 const cli = (...args) => execFileSync("npx", ["tsx", "src/cli.ts", ...args, "--workspace", ws], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
 let failed = false;
 const ok = (cond, label) => {
@@ -12,51 +12,43 @@ const ok = (cond, label) => {
   if (!cond) failed = true;
 };
 const png = (f) => existsSync(f) && readFileSync(f).toString("ascii", 1, 4) === "PNG";
+const fails = (...args) => {
+  try {
+    cli(...args);
+    return "";
+  } catch (e) {
+    return String(e.stdout) + String(e.stderr);
+  }
+};
 
 cli("init");
-ok(existsSync(path.join(ws, "npcs", "village.easynpc.json")) && existsSync(path.join(ws, "maps", "multicultural_village.tilemap.json")), "init copies the village sample");
-ok(/10 NPCs · 18 places/.test(cli("info")), "info");
-const npcs = JSON.parse(cli("list", "npcs", "--json")).npcs;
-ok(npcs.length === 10 && npcs.some((n) => n.id === "monk" && /หลวงพี่/.test(n.th)), "list npcs (Thai names in Thai script)");
-ok(JSON.parse(cli("list", "places", "--json")).places.length === 18, "list places");
-const plan = JSON.parse(cli("schedule", "kakna", "--day", "4", "--json"));
-ok(plan.weekday === "fri" && plan.entries.some((e) => e.place === "stall_roti"), "schedule kakna (Friday)");
-const where = JSON.parse(cli("where", "--day", "4", "--at", "12:45", "--json"));
-ok(where.npcs.filter((s) => s.place === "mosque").length >= 2, "where: Friday prayer at the mosque");
-ok(/^\d+ tiles: /.test(cli("path", "temple", "boats")), "path temple → boats");
-ok(/day 4 .*Friend|day 4 .*Familiar/.test(cli("bond", "fatimah", "--days", "5", "--gift", "kurma")), "bond: affinity grows with loved gifts");
-ok(/0 errors, 0 warnings/.test(cli("check")), "check: clean");
-ok(/valid \(dry run/.test(cli("set-entry", "adam", "17:00", "beach", "play", "--days", "sun", "--dry-run")), "set-entry --dry-run");
-cli("set-entry", "adam", "17:00", "beach", "play", "--days", "sun");
-ok(JSON.parse(cli("schedule", "adam", "--day", "6", "--json")).entries.some((e) => e.at === "17:00" && e.place === "beach"), "set-entry saved (Sunday only)");
-cli("remove-entry", "adam", "17:00", "--days", "sun");
-ok(!JSON.parse(cli("schedule", "adam", "--day", "6", "--json")).entries.some((e) => e.at === "17:00"), "remove-entry");
-let out = "";
-try {
-  cli("set-entry", "adam", "17:00", "moon", "play");
-} catch (e) {
-  out = String(e.stdout) + String(e.stderr);
-}
-ok(/unknown place "moon"/.test(out), "set-entry refuses an unknown place");
-cli("render", "map", "--day", "4", "--at", "07:30", "--out", path.join(ws, "map.png"), "--scale", "2");
-cli("render", "map", "--day", "4", "--at", "21:00", "--night", "true", "--out", path.join(ws, "night.png"));
-cli("render", "timeline", "--day", "4", "--out", path.join(ws, "tl.png"));
-ok(png(path.join(ws, "map.png")) && png(path.join(ws, "night.png")) && png(path.join(ws, "tl.png")), "render map / night / timeline");
-const doc = JSON.parse(readFileSync(path.join(ws, "npcs", "village.easynpc.json"), "utf8"));
-doc.npcs.find((n) => n.id === "pakcik").affinity.gifts.liked.push("beer");
-writeFileSync(path.join(ws, "npcs", "broken.easynpc.json"), JSON.stringify({ format: "easynpc/1", npcs: [] }));
-writeFileSync(path.join(ws, "npcs", "village.easynpc.json"), JSON.stringify(doc));
-out = "";
-try {
-  cli("check");
-} catch (e) {
-  out = String(e.stdout) + String(e.stderr);
-}
-ok(/non-halal/.test(out), "check refuses a non-halal gift for a Malay-Muslim NPC");
-rmSync(path.join(ws, "npcs", "broken.easynpc.json"));
-cli("init", "--force");
+ok(existsSync(path.join(ws, "portraits", "village.easyportrait.json")) && existsSync(path.join(ws, "sprites", "kopiah_boy.json")), "init copies the sample");
+ok(/20 portraits .* 25 Easy Sprite projects/.test(cli("info")), "info");
+const list = JSON.parse(cli("list", "--json"));
+ok(list.length === 20 && list.some((p) => p.id === "town_monk" && /หลวงพี่/.test(p.name.th)), "list (Thai names in Thai script)");
+ok(JSON.parse(cli("show", "town_hijab_teacher")).headwear === "hijab", "show");
+ok(/songkok/.test(cli("options")), "options");
+ok(/ok — 20 portraits/.test(cli("check")), "check: clean");
+ok(/"headwear": "songkok"/.test(cli("from-sprite", "songkok_groom", "--dry-run")), "from-sprite --dry-run");
+cli("from-sprite", "teen_runner", "--id", "runner", "--th", "นนท์", "--en", "Non");
+ok(JSON.parse(cli("show", "runner")).name.th === "นนท์", "from-sprite saves");
+cli("set", "runner", "--headwear", "cap", "--headwear-color", "#c84040", "--features", "freckles");
+ok(JSON.parse(cli("show", "runner")).headwear === "cap", "set changes fields");
+ok(/skin/.test(fails("set", "runner", "--skin", "pink")), "set refuses a bad colour");
+cli("remove", "runner");
+ok(/No portrait/.test(fails("show", "runner")), "remove");
+cli("render", "town_kopiah_boy", "--emotion", "ดีใจ", "--out", path.join(ws, "one.png"));
+cli("render", "town_kopiah_boy", "--kind", "strip", "--out", path.join(ws, "strip.png"));
+cli("render", "--scale", "1", "--out", path.join(ws, "sheet.png"));
+ok(png(path.join(ws, "one.png")) && png(path.join(ws, "strip.png")) && png(path.join(ws, "sheet.png")), "render portrait / strip / sheet");
+const doc = JSON.parse(readFileSync(path.join(ws, "portraits", "village.easyportrait.json"), "utf8"));
+writeFileSync(path.join(ws, "portraits", "bad.easyportrait.json"), JSON.stringify({ format: "easyportrait/1", portraits: [{ ...doc.portraits[0], name: { th: "x", en: "Prophet" } }] }));
+const out = fails("check");
+ok(/duplicate id/.test(out) && /sacred/.test(out), "check refuses duplicates and sacred figures");
+rmSync(path.join(ws, "portraits", "bad.easyportrait.json"));
 cli("export", "--preset", "all");
-for (const f of ["exports/easynpc-godot/project.godot", "exports/easynpc-godot/easynpc/npc_engine.gd", "exports/easynpc-godot/easynpc/parity.json", "exports/easynpc-godot/test_npc.gd", "exports/easynpc-pixi/easynpc.world.json", "exports/easynpc-pixi/easynpc-pixi.js", "exports/easynpc-pixi/index.html", "exports/easynpc-png/map-night.png", "exports/easynpc-json/easynpc.world.json"]) ok(existsSync(path.join(ws, f)), `export → ${f}`);
+for (const f of ["exports/easyportrait-dialogue/town_kid/neutral.png", "exports/easyportrait-dialogue/town_kid/frames/neutral.png", "exports/easyportrait-dialogue/town_kid/portrait.json", "exports/easyportrait-godot/project.godot", "exports/easyportrait-godot/easyportrait/parity.json", "exports/easyportrait-godot/test_portrait.gd", "exports/easyportrait-pixi/easyportrait-pixi.js", "exports/easyportrait-pixi/index.html", "exports/easyportrait-png/sheet.png"]) ok(existsSync(path.join(ws, f)), `export → ${f}`);
+ok(!existsSync(path.join(ws, "exports/easyportrait-dialogue/town_kid/sleepy.png")), "dialogue preset: Easy Dialogue's 7 emotions only");
 
 rmSync(ws, { recursive: true, force: true });
 console.log(failed ? "CLI smoke FAILED" : "CLI smoke OK");

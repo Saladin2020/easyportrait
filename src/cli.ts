@@ -85,6 +85,7 @@ program
 program
   .command("options")
   .description("Bodies, hair styles, headwear, shirts, features, emotions")
+  .option("--workspace <path>", "(ignored)")
   .action(() => {
     console.log(`bodies     ${BODIES.join(", ")}\nhair       ${HAIR_STYLES.join(", ")}\nheadwear   ${HEADWEAR.join(", ")}\nshirts     ${SHIRTS.join(", ")}\nfeatures   ${FEATURES.join(", ")}`);
     console.log(`emotions   ${EMOTIONS.map((e) => `${e} (${EMOTION_TH[e]})`).join(", ")}`);
